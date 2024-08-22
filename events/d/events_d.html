@@ -83,7 +83,6 @@
     height: auto;
     border-radius: 8px;
 }
-
 .carousel-caption {
     position: absolute;
     bottom: 10px;
@@ -93,19 +92,58 @@
     padding: 10px;
     border-radius: 8px;
     background: rgba(155, 14, 211, 0.938); /* Dark overlay effect */
+    max-width: 90%; /* Ensures it doesn't overflow */
+    box-sizing: border-box;
 }
 
 .carousel-caption h5 {
     font-family: 'Arial Black', sans-serif;
-    font-size: 1.5rem;
+    font-size: calc(1.2rem + 1vw); /* Responsive font size */
     margin: 0;
-    background: rgba(0,0,0,0.5); /* Background for text */
+    background: rgba(0, 0, 0, 0.5); /* Background for text */
     padding: 10px;
     border-radius: 8px;
     color: #ff9900;
-
     animation: textFadeIn 2s ease-in-out;
+    word-wrap: break-word; /* Prevents text overflow */
 }
+
+/* Media queries for further adjustments on different screen sizes */
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 5px;
+        left: 5px;
+        padding: 8px;
+    }
+
+    .carousel-caption h5 {
+        font-size: calc(1rem + 1vw); /* Smaller text on smaller screens */
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption {
+    max-height: 40px;
+
+        bottom: 2px;
+        left: 2px;
+        padding: 6px;
+    }
+
+    .carousel-caption h5 {
+        font-size: calc(0.4rem + 1vw); /* Even smaller text on very small screens */
+        padding: 6px;
+    }
+    li{
+        font-size: calc(0.4rem + 1vw);
+    }
+    .contact-nav a{
+        width: 100%;
+        font-size: smaller;
+    }
+}
+
         .download-buttons a {
             margin-top: 10px;
             margin-right: 10px;
@@ -147,6 +185,8 @@
         transform: translateY(0);
     }
 }
+
+
 
         .carousel-item {
             transition: transform 0.6s ease;
@@ -368,16 +408,16 @@
                 <div class="col-md-4 event-details animate__animated animate__fadeIn animate__delay-2s">
                     <h4>Event Prize</h4>
                     <ul>
-                        <li>1st Prize: 10,000 NPR + Premium Hampers</li>
-                        <li>2nd Prize: 8,000 NPR + Hampers</li>
-                        <li>3rd Prize: Hampers + 3,000 NPR</li>
+                        <li>1st Prize: 8,000 NPR + Premium Hampers</li>
+                        <li>2nd Prize: Hampers</li>
                     </ul>
                 </div>
                 <div class="col-md-4 event-details animate__animated animate__fadeIn animate__delay-3s">
                     <h4>Event Service & Fee</h4>
                     <ul>
-                        <li>Fee to Dance: 300 NPR</li>
-                        <li>Fee to Watch: 150 NPR (Chance of 33.33% discount)</li>
+                        <li>Registration Fee :800 Participants
+                           </li>
+                        <li> Viewer Fee :- 150 Audiences</li>
                     </ul>
                 </div>
             </div>

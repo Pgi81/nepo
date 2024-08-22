@@ -1,0 +1,697 @@
+<meta charset="utf-8">
+<title>Nepholic - </title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+<!-- Icon Font Stylesheet -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link rel="stylesheet" href="../../lib/animate/animate.min.css"/>
+<link href="../../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+<link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Templat../../e Stylesheet -->
+<link href="../../css/style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <!-- Animate.css for advanced animations -->
+    <style>
+         /* .nav-color{
+                color: #fff;
+                -webkit-text-fill-color: #fff;
+            } */
+            .text-primary{
+                color: linear-gradient(to right, purple, red);
+             }
+           
+                .cs{
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+                .c{
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+                .c:disabled{
+                    pointer-events: none;
+                }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .event-details, .event-slider, .event-sponsorship-contact {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .event-details, .event-sponsorship-contact {
+            transition: transform 0.5s ease-in-out;
+        }
+        .event-details:hover, .event-sponsorship-contact:hover {
+            transform: scale(1.02);
+        }
+        .event-slider {
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-shadow: 2px 2px 4px rgba(143, 126, 126, 0.452);
+    z-index: 10;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(155, 14, 211, 0.938); /* Dark overlay effect */
+}
+
+.carousel-caption h5 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    background: rgba(0,0,0,0.5); /* Background for text */
+    padding: 10px;
+    border-radius: 8px;
+    color: #ff9900;
+
+    animation: textFadeIn 2s ease-in-out;
+}
+        .download-buttons a {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .contact-nav a {
+            margin-right: 10px;
+            transition: color 0.3s;
+        }
+        .contact-nav a:hover {
+            color: #007bff;
+        }
+        .btn-link {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .btn-link:hover {
+            text-decoration: underline;
+        }
+       
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        .carousel-item {
+            transition: transform 0.6s ease;
+        }
+    </style>
+</head>
+<body>
+        
+                <!-- Spinner Start -->
+                <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <!-- Spinner End -->
+        
+                <!-- Topbar Start -->
+                <div class="container-fluid topbar bg-light px-5 d-none d-lg-block" >
+                    <div class="row gx-0 align-items-center">
+                        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                            <div class="d-flex flex-wrap">
+                                <a href="https://maps.app.goo.gl/gXkVtxePZjKKrWGj7" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-gradient me-2"></i>Find A Location</a>
+                                <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-gradient me-2"></i>+977 - 9805205961</a>
+                                <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-gradient me-2"></i>nepholic@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center text-lg-end">
+                            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                                <a href="#"><small class="me-3 text-dark cs"><i class="fa fa-user text-gradient me-2"></i>Register</small></a>
+                                <a href="#"><small class="me-3 text-dark cs"><i class="fa fa-sign-in-alt text-gradient me-2"></i>Login</small></a>
+                                <div class="dropdown ">
+                                    <a href="#" class="dropdown-toggle text-dark cs" data-bs-toggle="dropdown"><small><i class="fa fa-home text-gradient me-2"></i> My Dashboard</small></a>
+                                    <div class="dropdown-menu rounded">
+                                        <a href="#" class="dropdown-item cs"><i class="fas fa-user-alt text-gradient me-2"></i> My Profile</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-comment-alt text-gradient me-2"></i> Inbox</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-bell text-gradient me-2"></i> Notifications</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-cog text-gradient me-2"></i> Account Settings</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-power-off text-gradient me-2"></i> Log Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Topbar End -->
+        
+                <!-- Navbar & Hero Start -->
+                <div class="container-fluid position-relative p-0">
+                    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                        <a href="" class="navbar-brand p-0 d-flex align-items-center">
+                            <h1 class="mb-0 me-2 text-gradient">नेफ्holic</h1>
+                            <img src="img/logo.png" alt="Logo" style="height: 40px;">
+                            <!-- <i class="fas fa-search-dollar me-3"></i> -->
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav ms-auto py-0">
+                                <a href="index.html" class="nav-item nav-link active nav-color">Home</a>
+                                <!-- <a href="about.html" class="nav-item nav-link">Marketing</a>
+                                <a href="service.html" class="nav-item nav-link">Education</a>
+                                <a href="blog.html" class="nav-item nav-link">Art</a> -->
+                                   <!-- Marketing Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Marketing</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Digital Marketing</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Advertising</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Business Strategies</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Financial Advisory</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">International Marketing</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Branding</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Content Creation</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">SEO & SEM</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Email Marketing</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Market Research</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Technology Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Technology</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Website Design & Development</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Graphic Design</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Video Production & Editing</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Social Media Management</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">IT Solutions</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">App Development</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Cloud Services</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Cybersecurity</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Software Development</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Data Analysis</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Education Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Education</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Curriculum Development</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">E-Learning Solutions</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Training & Workshops</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Educational Technology</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Academic Consulting</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Agriculture Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Agriculture</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Sustainable Farming</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Crop Management</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Agricultural Technology</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Farm Management Solutions</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Soil & Water Conservation</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Art Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Art</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Dance</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Painting</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Sculpture</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Drawing</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Photography</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Printmaking</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Ceramics</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Textile Arts</a>
+                                <a href="#" class="dropdown-item c" onclick="showLoginAlert()">Digital Art</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Courses</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item c">Marketing Fundamentals</a>
+                                <a href="#" class="dropdown-item c">SEO & SEM Mastery</a>
+                                <a href="#" class="dropdown-item c">Content Marketing Strategies</a>
+                                <a href="#" class="dropdown-item c">Web Development Basics</a>
+                                <a href="#" class="dropdown-item c">Advanced Web Design</a>
+                                <a href="#" class="dropdown-item c">Graphic Design Essentials</a>
+                                <a href="#" class="dropdown-item c">App Development Fundamentals</a>
+                                <a href="#" class="dropdown-item c">Data Analysis Techniques</a>
+                                <a href="#" class="dropdown-item c">Digital Art Techniques</a>
+                                <a href="#" class="dropdown-item c">Cloud Computing for Beginners</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Events</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item">Dance</a>
+                                <a href="#" class="dropdown-item c">Sponsorships</a>
+                                <a href="#" class="dropdown-item c">Investments</a>
+                                <a href="#" class="dropdown-item c">Free</a>
+                                <a href="#" class="dropdown-item c">Discount</a>
+                            </div>
+                        </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Get Started</a>
+                        </div>
+                    </nav>
+                    
+
+
+
+                      <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active text-primary">Contact</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <!-- First Row -->
+                <div class="col-md-4 event-details animate__animated animate__fadeIn animate__delay-1s">
+                    <h4>Event Details</h4>
+                    <ul>
+                        <li><strong>Venue:</strong> <a target="_blank" href="https://maps.app.goo.gl/kKqUfUGceBmS9LUP9">Central Tower</a></li>
+                        <li><strong>Location:</strong> Click Venue name</li>
+                        <li><strong>Event date:</strong> 15 Bhadra (31 August, 2024)</li>
+                        <li><strong>Duration:</strong> One Day</li>
+                        <li><strong>Start Time:</strong> 10:00 AM</li>
+                        <li><strong>End Time:</strong> 8:00 PM</li>
+                        <li><strong>Styles:</strong>1 VS 1 (Rep Your Style, Popping)</li>
+                        <li><strong>Organizer:</strong> <a target="_blank" href="https://maps.app.goo.gl/NpPZNDRAQc5oGXjU6">Nepholic (0.01)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 event-details animate__animated animate__fadeIn animate__delay-2s">
+                    <h4>Event Prize</h4>
+                    <ul>
+                        <li>1st Prize: 10,000 NPR + Premium Hampers</li>
+                        <li>2nd Prize: 8,000 NPR + Hampers</li>
+                        <li>3rd Prize: Hampers + 3,000 NPR</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 event-details animate__animated animate__fadeIn animate__delay-3s">
+                    <h4>Event Service & Fee</h4>
+                    <ul>
+                        <li>Fee to Dance: 300 NPR</li>
+                        <li>Fee to Watch: 150 NPR (Chance of 33.33% discount)</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Second Row: Event Judge with Image Slider -->
+                <div class="col-md-12 event-slider animate__animated animate__fadeIn animate__delay-4s">
+                    <h4>Event Judge</h4>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../img/a1.png" alt="Judge 1">
+                                <div class="carousel-caption">
+                                    <h5>Judge<br>
+                                        Bishal Sapkota ( Astro Besoul )</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x400" alt="Judge 2">
+                                <div class="carousel-caption">
+                                    <h5>Judge<br>
+                                        Bikram Tamang ( B2D Bekrump )</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x400" alt="Judge 3">
+                                <div class="carousel-caption">
+                                    <h5>Judge<br>Sugar Gurung ( Popping Sugar Nepsoul )</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x400" alt="Judge 3">
+                                <div class="carousel-caption">
+                                    <h5>DJ<br>Abhiskhar  Magar Gurung ( DJ Knockout )</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x400" alt="Judge 3">
+                                <div class="carousel-caption">
+                                    <h5>Emcee<br>Sudip Rana Magar ( Deep Show B2D )</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Third Row: Sponsorship and Contact Us -->
+                <div class="col-md-6 event-sponsorship-contact animate__animated animate__fadeIn animate__delay-5s">
+                    <h4>Sponsorship Opportunities</h4>
+                    <p>Details on sponsorship opportunities.</p>
+                    <div class="download-buttons">
+                        <a href="#" class="btn btn-primary">Download Business Pricing</a>
+                        <a href="#" class="btn btn-primary">Download Event Proposal</a>
+                    </div>
+                </div>
+                <div class="col-md-6 event-sponsorship-contact animate__animated animate__fadeIn animate__delay-6s">
+                    <h4>Contact Us</h4>
+                    <p>If you have any questions, feel free to reach out:</p>
+                    <div class="contact-nav">
+                        <a href="tel:+1234567890" class="btn btn-link">Call Us: +1234567890</a>
+                        <a href="mailto:info@example.com" class="btn btn-link">Email Us: info@example.com</a>
+                        <a href="https://www.example.com" class="btn btn-link">Visit Our Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+                    <h1 class="display-5 mb-4">Our Clients Reviews</h1>
+                    <p class="mb-0">Our Testimonials section showcases feedback from our valued clients, highlighting their experiences and the impact of our services. Here, you can read about how we've helped businesses achieve their goals, streamline operations, and drive growth. Our clients' success stories reflect our commitment to delivering exceptional results and personalized solutions. Discover how we can make a difference for you through their shared experiences.
+                    </p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/ccvt.jpeg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Our partnership with this team has been outstanding. Their strategic management of our sponsorship investments ensured every dollar was used effectively, enhancing our ability to support students studying abroad.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">CCVT</h4>
+                                <p class="mb-0">Abroad Study Consultancy</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/rda.png" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Thanks to their exceptional support, we’ve been able to focus on our core mission of fostering artistic talent. Their insights into marketing and operations have significantly boosted our academy's growth.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Royal Dance Academy</h4>
+                                <p class="mb-0">Dance Workshop</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-half-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/pxs.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Their creative approach and strategic advice have transformed our music production business. We’ve expanded our audience and streamlined our processes, leading to a marked increase in success.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Pop X Soul</h4>
+                                <p class="mb-0">Music Company</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/pgi.jpeg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Their expertise in consulting has revolutionized our operational and financial practices. We've seen improved efficiency and a stronger impact on our nursing education programs.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Premganga Institiute</h4>
+                                <p class="mb-0">NCLEX Institiute</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+ <!-- Footer Start -->
+ <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a href="index.html#about"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                    <!-- <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a> -->
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Support</h4>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Contact Info</h4>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                        <p class="text-white mb-0">Kshetrapur - Bharatpur Rd, Bharatpur 44200</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-envelope text-primary me-3"></i>
+                        <p class="text-white mb-0">nepholic@gmail.com</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-phone-alt text-primary me-3"></i>
+                        <p class="text-white mb-0">+977 9869364365</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fab fa-firefox-browser text-primary me-3"></i>
+                        <a href="https://pgi81.github.io/nepo/"><p class="text-white mb-0">https://pgi81.github.io/nepo/</p></a>
+                    </div>
+                    <div class="d-flex">
+                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+                        <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+       <!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-12 text-center mb-md-0">
+                <span class="text-body">
+                    <a href="#" class="border-bottom text-white">
+                        <i class="fas fa-copyright text-light me-2"></i>Nepholic, All rights reserved.
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#topbar" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        <script>
+            document.querySelectorAll('.c').forEach(function(item) {
+                item.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    alert("You need to log in to access this feature.");
+                });
+            });
+            document.querySelectorAll('.cs').forEach(function(item) {
+                item.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    alert("Comming Soon!, Stay Tuned.");
+                });
+            });
+        </script>
+        <!-- JavaScript Libraries -->
+         
+        <!-- Template Javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../../lib/wow/wow.min.js"></script>
+        <script src="../../lib/easing/easing.min.js"></script>
+        <script src="../../lib/waypoints/waypoints.min.js"></script>
+        <script src="../../lib/counterup/counterup.min.js"></script>
+        <script src="../../lib/lightbox/js/lightbox.min.js"></script>
+        <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <script src="../../js/main.js"></script>
+        
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+
+</html>

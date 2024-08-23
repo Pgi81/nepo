@@ -1,11 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
         <meta charset="utf-8">
-          <title>Nepholic - </title>
           <link href="../../img/logo.png" rel="icon">
-        
+          <title>Nepholic - </title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
@@ -196,6 +197,7 @@
             transition: transform 0.6s ease;
         }
     </style>
+    
 </head>
 <body>
         
@@ -498,7 +500,7 @@
                     <p>If you have any questions, feel free to reach out:</p>
                     <div class="contact-nav">
                         <a href="tel:+977 - 9805205961" class="btn btn-link">Call Us: +977 - 9805205961</a>
-                        <a href="mailto:thapasamratnep@gmail.com" class="btn btn-link">Email Us: nepholic@gmail.com</a>
+                        <a href="mailto:thapasamratnep@gmail.com" class="btn btn-link">Email Us: thapasamratnep@gmail.com</a>
                         <a href="https://pgi81.github.io/nepo/" class="btn btn-link">Visit Our Website</a>
                     </div>
                 </div>
@@ -703,26 +705,6 @@
     </div>
 </div>
 <!-- Copyright End -->
-
-
-
-        <!-- Back to Top -->
-        <a href="#topbar" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
-        <script>
-            document.querySelectorAll('.c').forEach(function(item) {
-                item.addEventListener('click', function(event) {
-                    event.preventDefault(); // Prevent default link behavior
-                    alert("You need to log in to access this feature.");
-                });
-            });
-            document.querySelectorAll('.cs').forEach(function(item) {
-                item.addEventListener('click', function(event) {
-                    event.preventDefault(); // Prevent default link behavior
-                    alert("Comming Soon!, Stay Tuned.");
-                });
-            });
-        </script>
         <!-- JavaScript Libraries -->
          
         <!-- Template Javascript -->
@@ -742,6 +724,23 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        
+window.onload = function() {
+    // Create a new URL object
+    let url = new URL(window.location.href);
+
+    // Remove the filename from the pathname
+    url.pathname = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1);
+
+    // Use history.replaceState to update the URL without reloading the page
+    history.replaceState(null, '', url.toString());
+
+    // Now the URL in the address bar is updated
+    console.log("Updated URL:", url.toString());
+};
+
+    </script>
     </body>
 
 </html>

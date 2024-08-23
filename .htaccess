@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^E1-offstage$ /events_d.html [L]

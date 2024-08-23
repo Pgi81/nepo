@@ -467,6 +467,20 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+                 <script>
+        
+window.onload = function() {
+    // Create a new URL object
+    let url = new URL(window.location.href);
+
+    // Remove the filename from the pathname
+    url.pathname = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1);
+
+    // Use history.replaceState to update the URL without reloading the page
+    history.replaceState(null, '', url.toString());
+};
+
+    </script>
     </body>
 
 </html>

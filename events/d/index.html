@@ -1,7 +1,19 @@
 <script>
-    window.onload = function() {
-    // Redirect to a new URL
-    window.location.href = 'events_d.html';
+  window.onload = function() {
+    // Get the URL parameters
+    const params = new URLSearchParams(window.location.search);
+    
+    // Check for the 'url' parameter
+    const urlParam = params.get('url');
+    
+    // Redirect based on the 'url' parameter
+    if (urlParam === "events") {
+        window.location.href = 'events_d.html';
+    } else {
+        window.location.href = 'presentation.html';
+    }
 };
+
+
 
 </script>

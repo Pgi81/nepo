@@ -215,22 +215,39 @@
                             <a href="#" class="nav-link" data-bs-toggle="dropdown">
                                 <span class="dropdown-toggle">Events</span>
                             </a>
-                            <div class="dropdown-menu m-0">
-                                <a href="events/d/" class="dropdown-item">Dance</a>
-                                <a href="#" class="dropdown-item c">Sponsorships</a>
-                                <a href="#" class="dropdown-item c">Investments</a>
-                                <a href="#" class="dropdown-item c">Free</a>
-                                <a href="#" class="dropdown-item c">Discount</a>
-                            </div>
-                        </div>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
-                            </div>
-                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Get Started</a>
-                        </div>
-                    </nav>
-                     
-            
+                    <div class="dropdown-menu m-0">
+                        <a href="#" class="dropdown-item" onclick="redirectWithParam()">Dance</a>
+                        <a href="#" class="dropdown-item c">Sponsorships</a>
+                        <a href="#" class="dropdown-item c">Investments</a>
+                        <a href="#" class="dropdown-item c">Free</a>
+                        <a href="#" class="dropdown-item c">Discount</a>
+                        <a href="events/d/" class="dropdown-item">Presentation</a>
+                    </div>
+                </div>
+            </div>
+                    
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
 
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Get Started</a>
+                </div>
+            </nav>
+                    <script>
+                        function redirectWithParam() {
+                            // Define the parameter and its value
+                            const urlParam = "events";
+                            
+                            // Construct the target URL with the query parameter
+                            const targetUrl = `events/d/index.html?url=${urlParam}`;
+                            
+                            // Redirect to the target URL
+                            window.location.href = targetUrl;
+                        }
+                       
+                    </script>
+                    
+                   
+                    
             <!-- Carousel Start -->
             <div class="header-carousel owl-carousel" id="topbar">
                 <!-- <div class="header-carousel-item">
